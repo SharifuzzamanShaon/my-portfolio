@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { AiOutlineAlignLeft } from "react-icons/ai";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { BsDownload } from "react-icons/bs";
 
 const Header = ({ darkMode, setDarkMode }) => {
@@ -22,17 +22,17 @@ const Header = ({ darkMode, setDarkMode }) => {
   };
   return (
     <header className="bg-white dark:bg-gray-900 shadow-md fixed w-full top-0 z-10">
-      <div className="w-full flex justify-between items-center py-4 px-6">
+      <div className="w-full flex justify-between items-center py-3 px-6">
         {" "}
         <AiOutlineAlignLeft className="block xl:hidden text-gray-800 dark:text-gray-100" />
         {/* Logo */}
         <div className="text-xl font-bold text-gray-800 dark:text-gray-100">
           {" "}
           {/* Adjusted text-2xl to text-xl */}
-          <a href="/">
+          <Link to="/">
             <img src="/pagelogo.png" className="h-8" alt="Logo" />{" "}
             {/* Added a fixed height */}
-          </a>
+          </Link>
         </div>
         {/* Navigation */}
         <nav className="hidden md:flex space-x-4">
@@ -55,28 +55,30 @@ const Header = ({ darkMode, setDarkMode }) => {
               {/* Adjusted text-xl to text-lg */}
             </a>
           </button>
-          <a
-            href="/projects"
-            className={`${
-              location.pathname === "/projects"
-                ? "text-white"
-                : "text-gray-600 dark:text-gray-300"
-            } hover:text-gray-900 dark:hover:text-white transition text-yellow-400 
+          <Link to="/projects">
+            <span
+              className={`${
+                location.pathname === "/projects"
+                  ? "text-white"
+                  : "text-gray-600 dark:text-gray-300"
+              } hover:text-gray-900 dark:hover:text-white transition text-yellow-400 
         text-lg font-semibold tracking-wide`} // Adjusted text-xl to text-lg
-          >
-            Projects
-          </a>
-          <a
-            href="/contact"
-            className={`${
-              location.pathname === "/contact"
-                ? "text-white"
-                : "text-gray-600 dark:text-gray-300"
-            } hover:text-gray-900 dark:hover:text-white transition text-yellow-400 
+            >
+              Projects
+            </span>
+          </Link>
+          <Link to="/contact">
+            <span
+              className={`${
+                location.pathname === "/contact"
+                  ? "text-white"
+                  : "text-gray-600 dark:text-gray-300"
+              } hover:text-gray-900 dark:hover:text-white transition text-yellow-400 
         text-lg font-semibold tracking-wide`} // Adjusted text-xl to text-lg
-          >
-            Contact
-          </a>
+            >
+              Contact
+            </span>
+          </Link>
         </nav>
         {/* Dark Mode Toggle */}
         <button

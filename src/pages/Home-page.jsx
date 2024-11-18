@@ -2,7 +2,7 @@ import { DiNodejs } from "react-icons/di";
 import { FaJsSquare } from "react-icons/fa";
 import { SiExpress, SiMongodb, SiMysql } from "react-icons/si";
 import { RiReactjsFill } from "react-icons/ri";
-
+import { Link, useNavigate } from "react-router-dom";
 const HomePage = ({ darkMode }) => {
   const profileImg = import.meta.env.VITE_PROFILE_IMG; // Ensure dynamic profile image
 
@@ -11,7 +11,7 @@ const HomePage = ({ darkMode }) => {
       <div className="text-center max-w-5xl space-y-10">
         {/* Heading Section */}
         <div className="text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold tracking-wide text-white mb-4">
+          <h1 className="text-3xl sm:text-5xl font-bold tracking-wide text-white mb-4">
             Greetings, I'm{" "}
             <span className="text-yellow-400">Sharifuzzaman Hasan</span>
           </h1>
@@ -26,23 +26,20 @@ const HomePage = ({ darkMode }) => {
           </h3>
         </div>
 
-        {/* Profile Image Section */}
-        <div className="relative my-6">
+        <div className="flex items-center justify-center space-x-4 my-3">
+          {/* Profile Image */}
           <img
             src={"/profile-image.jpg"}
             alt="Sharifuzzaman Hasan"
-            className="mx-auto rounded-full w-24 h-24 object-cover shadow-xl transform transition duration-500 hover:scale-110"
+            className="rounded-full w-24 h-24 object-cover shadow-xl transform transition duration-500 hover:scale-110"
           />
-        </div>
 
-        {/* CTA Button */}
-        <div>
-          <a
-            href="#projects"
-            className="bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-800 font-semibold py-3 px-10 rounded-full text-lg shadow-xl hover:shadow-2xl transform transition duration-300 hover:scale-105"
-          >
-            View My Projects
-          </a>
+          {/* CTA Button */}
+          <Link to="/projects">
+            <span className="bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-800 font-semibold py-2 px-6 rounded-full text-md shadow-xl hover:shadow-2xl transform transition duration-300 hover:scale-105">
+              View My Projects
+            </span>
+          </Link>
         </div>
 
         {/* Skills Icons Section */}
