@@ -5,13 +5,11 @@ import { RiReactjsFill } from "react-icons/ri";
 import { Link, useNavigate } from "react-router-dom";
 import StickyContact from "../components/ContactOption";
 const HomePage = ({ darkMode }) => {
-  const profileImg = import.meta.env.VITE_PROFILE_IMG; // Ensure dynamic profile image
-
   return (
     <div className="min-h-screen bg-gradient-to-r from-[#000B58] to-[#003161] flex items-center justify-center text-white px-6 py-12">
-      <div className="text-center max-w-5xl space-y-12">
+      <div className="text-center max-w-5xl space-y-10">
         {/* Heading Section */}
-        <div className="h-[40vh] bg-gradient-to-r from-[#003161] via-[#006A67] to-[#000B58] flex items-center justify-center text-white px-6 py-12 relative overflow-hidden rounded-lg shadow-lg z-0">
+        <div className="lg:h-[30vh] sm:h-screen bg-gradient-to-r from-[#003161] via-[#006A67] to-[#000B58] flex items-center justify-center text-white px-6 py-12 relative overflow-hidden rounded-lg shadow-lg z-0">
           {/* Animated Background Elements */}
           <div className="absolute inset-0 overflow-hidden">
             <div className="absolute w-40 h-40 bg-yellow-400 opacity-20 rounded-full top-10 left-1/4 blur-2xl animate-pulse"></div>
@@ -23,21 +21,21 @@ const HomePage = ({ darkMode }) => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               {/* Text Content */}
               <div className="text-center sm:text-left mt-5">
-                <h1 className="text-1xl sm:text-3xl font-bold tracking-wide text-white mb-4">
+                <h1 className="text-1xl sm:text-2xl font-bold tracking-wide text-white mb-3">
                   Greetings,
                 </h1>
-                <h1 className="text-3xl sm:text-5xl font-bold tracking-wide text-white mb-4">
+                <h1 className="text-2xl sm:text-4xl font-bold tracking-wide text-white mb-3">
                   I'm{" "}
                   <span className="text-yellow-400">Sharifuzzaman Hasan</span>
                 </h1>
-                <p className="text-xl sm:text-2xl font-medium max-w-2xl text-gray-300 mb-4">
+                <p className="text-xl sm:text-1xl font-medium max-w-2xl text-gray-300 mb-4">
                   A passionate{" "}
                   <span className="text-yellow-400">Full-Stack Developer</span>{" "}
                   <span className="text-gray-400">|</span>{" "}
                   <span className="text-yellow-400">JavaScript Enthusiast</span>
                 </p>
               </div>
-<StickyContact/>
+              <StickyContact />
               {/* Profile Image */}
               <div className="relative flex items-center justify-center">
                 {/* Profile Image */}
@@ -93,8 +91,8 @@ const HomePage = ({ darkMode }) => {
         </div>
 
         {/* Description Section */}
-        <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mb-2 relative inline-block">
-          <span className="relative z-10">About Me</span>
+        <h2 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-white mb-2 relative inline-block">
+          <span className="relative z-5">About Me</span>
           <span className="absolute inset-x-0 -bottom-1 h-1 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-lg"></span>
         </h2>
         <div className="text-center sm:text-left text-gray-200 max-w-3xl mx-auto space-y-4">

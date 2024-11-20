@@ -1,10 +1,10 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlineAlignLeft } from "react-icons/ai";
 import { Link, useLocation } from "react-router-dom";
-import { BsDownload } from "react-icons/bs";
+import Navbar from "./Navbar";
+import MobileMenu from "./MobileMenu";
 
 const Header = ({ darkMode, setDarkMode }) => {
-  const pdfUrl = import.meta.env.VITE_CV_DRIVE_URL;
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
@@ -14,65 +14,29 @@ const Header = ({ darkMode, setDarkMode }) => {
       console.log(document.documentElement.classList);
     }
   }, [darkMode]);
-  const location = useLocation();
-  const handleOpenPdf = () => {
-    // const pdfUrl = `${process.env.VITE_CV_DRIVE_URL}`;
-    window.open(pdfUrl, "_blank"); // Opens the PDF in a new tab
-    console.log(pdfUrl);
-  };
+
+  const [openMobileMenu, setOpenMobileMenu] = useState(false);
   return (
     <header className="bg-gray-900 dark:bg-gray-800 shadow-md fixed w-full top-0 z-10">
       <div className="w-full flex justify-between items-center py-3 px-6">
         {/* Hamburger Menu Icon for Mobile */}
-        <AiOutlineAlignLeft className="block xl:hidden text-gray-100 dark:text-gray-200" />
-
+        <AiOutlineAlignLeft
+          className="block xl:hidden text-gray-100 dark:text-gray-200"
+          onClick={() => setOpenMobileMenu(!openMobileMenu)}
+        />
         {/* Logo */}
         <div className="text-xl font-bold text-gray-100 dark:text-gray-200">
-          <Link to="/">
-            <img src="/pagelogo.png" className="h-8" alt="Logo" />
-          </Link>
+          {openMobileMenu ? (
+            <MobileMenu/>
+          ) : (
+            <Link to="/">
+              <img src="/pagelogo.png" className="h-8" alt="Logo" />
+            </Link>
+          )}
         </div>
 
         {/* Navigation */}
-        <nav className="hidden md:flex space-x-4">
-          <button
-            onClick={handleOpenPdf}
-            className="flex items-center space-x-2"
-          >
-            <a
-              className={`${
-                location.pathname === "/resume"
-                  ? "text-yellow-400"
-                  : "text-gray-300 dark:text-gray-400"
-              } hover:text-yellow-500 transition text-lg font-semibold tracking-wide flex items-center space-x-2`}
-            >
-              <span>Resume</span>
-              <BsDownload className="text-lg" />
-            </a>
-          </button>
-          <Link to="/projects">
-            <span
-              className={`${
-                location.pathname === "/projects"
-                  ? "text-yellow-400"
-                  : "text-gray-300 dark:text-gray-400"
-              } hover:text-yellow-500 transition text-lg font-semibold tracking-wide`}
-            >
-              Projects
-            </span>
-          </Link>
-          <Link to="/contact">
-            <span
-              className={`${
-                location.pathname === "/contact"
-                  ? "text-yellow-400"
-                  : "text-gray-300 dark:text-gray-400"
-              } hover:text-yellow-500 transition text-lg font-semibold tracking-wide`}
-            >
-              Contact
-            </span>
-          </Link>
-        </nav>
+        <Navbar />
 
         {/* Dark Mode Toggle */}
         <button
