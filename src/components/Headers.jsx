@@ -21,23 +21,20 @@ const Header = ({ darkMode, setDarkMode }) => {
     console.log(pdfUrl);
   };
   return (
-    <header className="bg-white dark:bg-gray-900 shadow-md fixed w-full top-0 z-10">
+    <header className="bg-gray-900 dark:bg-gray-800 shadow-md fixed w-full top-0 z-10">
       <div className="w-full flex justify-between items-center py-3 px-6">
-        {" "}
-        <AiOutlineAlignLeft className="block xl:hidden text-gray-800 dark:text-gray-100" />
+        {/* Hamburger Menu Icon for Mobile */}
+        <AiOutlineAlignLeft className="block xl:hidden text-gray-100 dark:text-gray-200" />
+
         {/* Logo */}
-        <div className="text-xl font-bold text-gray-800 dark:text-gray-100">
-          {" "}
-          {/* Adjusted text-2xl to text-xl */}
+        <div className="text-xl font-bold text-gray-100 dark:text-gray-200">
           <Link to="/">
-            <img src="/pagelogo.png" className="h-8" alt="Logo" />{" "}
-            {/* Added a fixed height */}
+            <img src="/pagelogo.png" className="h-8" alt="Logo" />
           </Link>
         </div>
+
         {/* Navigation */}
         <nav className="hidden md:flex space-x-4">
-          {" "}
-          {/* Adjusted space-x-6 to space-x-4 */}
           <button
             onClick={handleOpenPdf}
             className="flex items-center space-x-2"
@@ -45,24 +42,21 @@ const Header = ({ darkMode, setDarkMode }) => {
             <a
               className={`${
                 location.pathname === "/resume"
-                  ? "text-white"
-                  : "text-gray-600 dark:text-gray-300"
-              } hover:text-gray-900 dark:hover:text-white transition text-yellow-400 
-          text-lg font-semibold tracking-wide flex items-center space-x-2`} // Adjusted text-xl to text-lg
+                  ? "text-yellow-400"
+                  : "text-gray-300 dark:text-gray-400"
+              } hover:text-yellow-500 transition text-lg font-semibold tracking-wide flex items-center space-x-2`}
             >
               <span>Resume</span>
-              <BsDownload className="text-lg" />{" "}
-              {/* Adjusted text-xl to text-lg */}
+              <BsDownload className="text-lg" />
             </a>
           </button>
           <Link to="/projects">
             <span
               className={`${
                 location.pathname === "/projects"
-                  ? "text-white"
-                  : "text-gray-600 dark:text-gray-300"
-              } hover:text-gray-900 dark:hover:text-white transition text-yellow-400 
-        text-lg font-semibold tracking-wide`} // Adjusted text-xl to text-lg
+                  ? "text-yellow-400"
+                  : "text-gray-300 dark:text-gray-400"
+              } hover:text-yellow-500 transition text-lg font-semibold tracking-wide`}
             >
               Projects
             </span>
@@ -71,23 +65,23 @@ const Header = ({ darkMode, setDarkMode }) => {
             <span
               className={`${
                 location.pathname === "/contact"
-                  ? "text-white"
-                  : "text-gray-600 dark:text-gray-300"
-              } hover:text-gray-900 dark:hover:text-white transition text-yellow-400 
-        text-lg font-semibold tracking-wide`} // Adjusted text-xl to text-lg
+                  ? "text-yellow-400"
+                  : "text-gray-300 dark:text-gray-400"
+              } hover:text-yellow-500 transition text-lg font-semibold tracking-wide`}
             >
               Contact
             </span>
           </Link>
         </nav>
+
         {/* Dark Mode Toggle */}
         <button
           onClick={() => setDarkMode(!darkMode)}
-          className="flex items-center justify-center w-8 h-8 bg-gray-200 dark:bg-gray-700 rounded-full hover:bg-gray-300 dark:hover:bg-gray-600 transition"
+          className="flex items-center justify-center w-8 h-8 bg-gray-700 dark:bg-gray-600 rounded-full hover:bg-gray-600 dark:hover:bg-gray-500 transition"
         >
           {darkMode ? (
             <svg
-              className="w-5 h-5 text-yellow-500" // Adjusted size to w-5 h-5
+              className="w-5 h-5 text-yellow-500"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
@@ -96,7 +90,7 @@ const Header = ({ darkMode, setDarkMode }) => {
             </svg>
           ) : (
             <svg
-              className="w-5 h-5 text-gray-800 dark:text-gray-100" // Adjusted size to w-5 h-5
+              className="w-5 h-5 text-gray-200 dark:text-gray-100"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
