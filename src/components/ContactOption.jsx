@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const StickyContact = () => {
   return (
-    <div className="fixed right-4 top-1/4 space-y-4 z-50">
+    <div className="fixed right-4 top-1/4 z-50 space-y-4 sm:space-y-2 sm:block hidden">
       {/* Phone Icon */}
       <Link
         href="tel:+8801302-216999"
@@ -13,7 +13,7 @@ const StickyContact = () => {
       </Link>
       {/* Gmail Icon */}
       <Link
-        href="shasan2200@gmail.com"
+        href="mailto:shasan2200@gmail.com"
         className="flex items-center justify-center bg-red-500 text-white p-3 rounded-full shadow-lg transform transition duration-300 hover:scale-110 hover:bg-red-600"
       >
         <FaEnvelope className="w-6 h-6" />
