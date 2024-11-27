@@ -19,12 +19,12 @@ const projects = [
     },
     {
       id: 3,
-      name: "Chat Application",
-      image: "/images/chat-app.png",
-      description: "A real-time chat app supporting group and private messaging.",
-      liveLink: "https://chatapp.example.com",
-      gitRepo: "https://github.com/username/chat-app",
-      technologies: ["React", "Socket.IO", "Node.js", "Tailwind CSS"],
+      name: "Find Recipes",
+      image: "/projectImg/recipe.png",
+      description: "This Recipe Management App enables users to explore and manage recipes effortlessly. It features secure user authentication with session management via localStorage, client-side pagination for faster and smoother recipe browsing, and a cart system to add recipes from any page. Cart data is stored locally for guests and linked to accounts for logged-in users. Additional enhancements include React Hot Toast for instant notifications, Material UI for a modern design, and a custom 404 page for better navigation",
+      liveLink: "https://recipe-app-coral-one.vercel.app/",
+      gitRepo: "https://github.com/SharifuzzamanShaon/recipe-app-frontend",
+      technologies: ["Next Js", "MVP features", "axios", "Tailwind CSS"],
     },
   ];
   
