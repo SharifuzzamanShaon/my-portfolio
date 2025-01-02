@@ -2,8 +2,7 @@ const projects = [
     {
       id: 1,
       name: "Learning Management System",
-      image: "https://res-console.cloudinary.com/daaxwtbba/media_explorer_thumbnails/471b4183814831e22e0999685e2aa08e/detailed",
-      description: "A modern learning management system built with Node.js, Next.js, MongoDB, and Redis. This application provides a comprehensive platform for managing and delivering educational content, featuring real-time notifications, efficient data caching, and a user-friendly interface.",
+      image: "/projectImg/lmsApp.png",
       liveLink: "https://skillsage-6v3g.onrender.com/",
       gitRepo: "https://github.com/SharifuzzamanShaon/LMS_Tech_App",
       technologies: ["Next JS 14", "Node.js", "MongoDB","Socket.io [Chattig Module]","Redux, RTK-Query","Redis [In memory cache]", "Tailwind CSS"],
