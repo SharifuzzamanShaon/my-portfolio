@@ -37,7 +37,7 @@ const ContactPage = ({ darkMode, setDarkMode }) => {
     <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 bg-gradient-to-r from-[#2d3363] to-[#bbbbbb] dark:bg-gray-700 p-8 rounded-lg shadow-lg">
       {/* Left Column: Contact Info */}
       <div className="space-y-6">
-        <h2 className="text-2xl font-semibold text:white">
+        <h2 className="text-2xl font-semibold text-white">
           Get in Touch
         </h2>
         <p className="text-white dark:text-gray-300">
@@ -71,70 +71,11 @@ const ContactPage = ({ darkMode, setDarkMode }) => {
         </div>
       </div>
 
-      {/* Right Column: Contact Form */}
-      <div>
-        <form onSubmit={handleSubmit} className="space-y-6">
-          <div>
-            <label className="block text-lg font-medium text-gray-800 dark:text-gray-100">
-              Name
-            </label>
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleInputChange}
-              className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-gray-100"
-              required
-            />
-          </div>
-
-          <div>
-            <label className="block text-lg font-medium text-gray-800 dark:text-gray-100">
-              Email
-            </label>
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleInputChange}
-              className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-gray-100"
-              required
-            />
-          </div>
-
-          <div>
-            <label className="block text-lg font-medium text-gray-800 dark:text-gray-100">
-              Message
-            </label>
-            <textarea
-              name="message"
-              value={formData.message}
-              onChange={handleInputChange}
-              className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-gray-100"
-              rows="3"
-              required
-            />
-          </div>
-
-          <button
-            type="submit"
-            className="w-full py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300"
-          >
-            Send Message
-          </button>
-
-          {submitted && (
-            <div className="mt-4 text-center text-green-500">
-              Thank you! Your message has been sent.
-            </div>
-          )}
-        </form>
-      </div>
     </div>
 
     {/* Social Links */}
     <div className="mt-12 text-center">
-      <h3 className="text-xl font-semibold mb-6">Find me on</h3>
+      <h3 className="text-xl font-semibold mb-6 text-white">Find me on</h3>
       <div className="flex justify-center space-x-8">
         <a
           href="https://twitter.com/yourprofile"
