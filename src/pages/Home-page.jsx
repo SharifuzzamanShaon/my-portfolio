@@ -23,7 +23,7 @@ const HomePage = ({ darkMode }) => {
           {/* CTA Button */}
           <div className="mt-6">
             <Link to="/projects">
-              <span className="bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-800 font-semibold py-2 px-6 rounded-full text-md shadow-xl hover:shadow-2xl transform transition duration-300 hover:scale-105">
+              <span className=" bg-gradient-to-r from-[#5c5a52] to-[#3a3a3a] text-gray-800 font-semibold py-2 px-6 rounded-full text-md shadow-xl hover:shadow-2xl text-white transform transition duration-300 hover:scale-105">
                 View My Projects
               </span>
             </Link>
