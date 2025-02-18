@@ -30,30 +30,30 @@ const ContactPage = ({ darkMode, setDarkMode }) => {
 
   return (
     <div
-  className={`min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100`}
+  className={`min-h-screen  bg-gradient-to-r from-[#2d3363] to-[#bbbbbb] flex dark:bg-gray-900 text-gray-900 dark:text-gray-100`}
 >
   {/* Contact Section */}
   <div className="pt-24 pb-12 px-6">
-    <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 bg-white dark:bg-gray-700 p-8 rounded-lg shadow-lg">
+    <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 bg-gradient-to-r from-[#2d3363] to-[#bbbbbb] dark:bg-gray-700 p-8 rounded-lg shadow-lg">
       {/* Left Column: Contact Info */}
       <div className="space-y-6">
-        <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-100">
+        <h2 className="text-2xl font-semibold text:white">
           Get in Touch
         </h2>
-        <p className="text-gray-600 dark:text-gray-300">
+        <p className="text-white dark:text-gray-300">
           I’d love to hear from you! Feel free to reach out using the details
           below or fill out the form.
         </p>
         <div className="space-y-4">
           <div className="flex items-center space-x-4">
             <BsWhatsapp className="text-blue-500 w-6 h-6" />
-            <span className="text-gray-800 dark:text-gray-100">
+            <span className="text-white dark:text-gray-100">
               +8801302-216999
             </span>
           </div>
           <div className="flex items-center space-x-4">
             <FaEnvelope className="text-blue-500 w-6 h-6" />
-            <span className="text-gray-800 dark:text-gray-100">
+            <span className="text-white dark:text-gray-100">
               shasan2200@gmail.com
             </span>
           </div>

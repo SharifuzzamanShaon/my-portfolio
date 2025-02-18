@@ -18,7 +18,7 @@ const MobileMenu = () => {
               : "text-blue-700 dark:text-blue-700"
           } hover:text-yellow-500 transition text-sm font-semibold tracking-wide flex items-center space-x-2`}
         >
-          <span>Resume</span>
+          <span>RESUME</span>
           <BsDownload className="text-sm" />
         </a>
       </button>
@@ -30,7 +30,7 @@ const MobileMenu = () => {
               : "text-gray-300 dark:text-gray-400"
           } hover:text-yellow-500 transition text-sm font-semibold tracking-wide`}
         >
-          Projects
+          PROJECTS
         </span>
       </Link>
       <Link to="/contact">
@@ -41,7 +41,7 @@ const MobileMenu = () => {
               : "text-gray-300 dark:text-gray-400"
           } hover:text-yellow-500 transition text-sm font-semibold tracking-wide`}
         >
-          Contact
+          CONTACT
         </span>
       </Link>
     </nav>

@@ -3,6 +3,7 @@ const projects = [
       id: 1,
       name: "Learning Management System",
       image: "/projectImg/lmsApp.png",
+      description:"A modern learning platform built with Node.js, Express.js, Next.js, React-Redux, and RTK Query. It features real-time notifications and uses Redis for in-memory caching to optimize performance.",
       liveLink: "https://skillsage-6v3g.onrender.com/",
       gitRepo: "https://github.com/SharifuzzamanShaon/LMS_Tech_App",
       technologies: ["Next JS 14", "Node.js", "MongoDB","Socket.io [Chattig Module]","Redux, RTK-Query","Redis [In memory cache]", "Tailwind CSS"],

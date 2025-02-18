@@ -16,9 +16,9 @@ const Navbar = () => {
             location.pathname === "/resume"
               ? "text-yellow-400"
               : "text-blue-700 dark:text-blue-700"
-          } hover:text-yellow-500 transition text-lg font-semibold tracking-wide flex items-center space-x-2`}
+          } hover:text-yellow-500 transition text-sm  tracking-wide flex items-center space-x-2`}
         >
-          <span>Resume</span>
+          <span>RESUME</span>
           <BsDownload className="text-lg" />
         </a>
       </button>
@@ -28,9 +28,9 @@ const Navbar = () => {
             location.pathname === "/projects"
               ? "text-yellow-400"
               : "text-gray-300 dark:text-gray-400"
-          } hover:text-yellow-500 transition text-lg font-semibold tracking-wide`}
+          } hover:text-yellow-500 transition text-sm tracking-wide`}
         >
-          Projects
+          PROJECTS
         </span>
       </Link>
       <Link to="/contact">
@@ -39,9 +39,9 @@ const Navbar = () => {
             location.pathname === "/contact"
               ? "text-yellow-400"
               : "text-gray-300 dark:text-gray-400"
-          } hover:text-yellow-500 transition text-lg font-semibold tracking-wide`}
+          } hover:text-yellow-500 transition text-sm tracking-wide`}
         >
-          Contact
+          CONTACT
         </span>
       </Link>
     </nav>
