@@ -33,7 +33,7 @@ const ContactPage = ({ darkMode, setDarkMode }) => {
   className={`min-h-screen  bg-gradient-to-r from-[#2d3363] to-[#bbbbbb] flex dark:bg-gray-900 text-gray-900 dark:text-gray-100`}
 >
   {/* Contact Section */}
-  <div className="pt-24 pb-12 px-6">
+  <div className="pt-24 pb-6 px-6">
     <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 bg-gradient-to-r from-[#2d3363] to-[#bbbbbb] dark:bg-gray-700 p-8 rounded-lg shadow-lg">
       {/* Left Column: Contact Info */}
       <div className="space-y-6">
@@ -75,7 +75,7 @@ const ContactPage = ({ darkMode, setDarkMode }) => {
 
     {/* Social Links */}
     <div className="mt-12 text-center">
-      <h3 className="text-xl font-semibold mb-6 text-white">Find me on</h3>
+      <h3 className="text-xl font-semibold  text-white">Find me on</h3>
       <div className="flex justify-center space-x-8">
         <a
           href="https://twitter.com/yourprofile"
