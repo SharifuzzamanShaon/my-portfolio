@@ -2,28 +2,36 @@ import React from "react";
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="border border-gray-300 dark:border-gray-700 rounded-lg shadow-md p-4 hover:shadow-lg transition bg-white dark:bg-gray-800">
+    <div className="border border-gray-300 dark:border-gray-700 rounded-lg shadow-md p-4  transition-transform transform hover:scale-105 hover:shadow-lg duration-300">
       <img
         src={project.image}
         alt={project.name}
         className="w-full h-40 object-cover rounded-t-md"
       />
       <div className="mt-4">
-        <h3 className="text-xl font-semibold dark:text-white">
+        <h3 className="text-xl font-semibold text-yellow-400 dark:text-white">
           {project.name}
         </h3>
-        <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">
+        <p className="text-sm text-white dark:text-gray-300 mt-2">
           {project.description}
         </p>
         <div className="mt-4">
-          <span className="font-bold dark:text-gray-200">Technologies: </span>
-          <ul className="list-disc list-inside text-sm text-gray-700 dark:text-gray-400 mt-2">
+          <span className="font-bold text-white dark:text-gray-200">
+            Technologies:{" "}
+          </span>
+          <div className="flex flex-wrap gap-2 mt-2">
             {project?.technologies.map((tech, index) => (
-              <li key={index}>{tech}</li>
+              <span
+                key={index}
+                className="bg-yellow-400 text-white font-medium text-sm px-3 py-1 rounded-full shadow-md"
+              >
+                {tech}
+              </span>
             ))}
-          </ul>
+          </div>
         </div>
-        <div className="mt-4 flex space-x-4">
+
+        <div className="mt-4 flex space-x-4 justify-center">
           <a
             href={project.liveLink || "#"}
             target={project.liveLink ? "_blank" : undefined}
