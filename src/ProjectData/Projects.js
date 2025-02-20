@@ -10,10 +10,10 @@ const projects = [
     },
     {
       id: 2,
-      name: "University management System | API's",
+      name: "Student management System | API's",
       image: "/projectImg/api-ums.png",
       description: "Backend to Integrate the online attendance system using Node js and Mongo DB Database, The main goal of this project is to focus on code/function reusability and reduce the complexity of development. Token-based Auth Using JWT || cron job schedule  || code reusability || Error handling, and complete folder structure",
-      liveLink: "",
+      liveLink: "https://documenter.getpostman.com/view/18668276/2sAYXFjHxB",
       gitRepo: "https://github.com/SharifuzzamanShaon/Student-Management-System",
       technologies: ["Node JS", "Express Js", "CRON Job schedule", "File conversion"],
     },
