@@ -26,6 +26,15 @@ const projects = [
       gitRepo: "https://github.com/SharifuzzamanShaon/recipe-app-frontend",
       technologies: ["Next JS", "MVP features", "axios", "Tailwind CSS"],
     },
+    {
+      id: 4,
+      name:"URL Shortener",
+      image: "/projectImg/url-short.png",
+      description: "A URL shortening service that allows users to shorten long URLs. It features a user-friendly interface and secure user authentication with JWT. The app is built with Node.js, Express.js, and MongoDB.",
+      liveLink: "https://url-shortener-73ct.onrender.com/",
+      gitRepo: "https://github.com/SharifuzzamanShaon/URL-shortener",
+      technologies: ["Node JS", "Express Js", "MongoDB", "JWT Auth","eJS"],
+    }
   ];
   
   export default projects;
