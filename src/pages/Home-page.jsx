@@ -16,9 +16,9 @@ const HomePage = ({ darkMode }) => {
       <div className="min-h-screen bg-gradient-to-r from-[#2d3363] to-[#bbbbbb] flex items-center justify-center text-white px-6 py-12">
         <div className="text-center max-w-5xl space-y-10">
           <HeadingSection />
-          <StickyContact/>
+          <StickyContact />
           {/* Description Section */}
-          <DescriptionSection/>
+          <DescriptionSection />
           {/* CTA Button */}
           <div className="mt-6">
             <Link to="/projects">
@@ -31,13 +31,21 @@ const HomePage = ({ darkMode }) => {
           {/* Porjects */}
         </div>
       </div>
-          <MySkills />
-      <div className="grid grid-cols-1  bg-gradient-to-r from-[#2d3363] to-[#bbbbbb] sm:grid-cols-2 md:grid-cols-3 gap-6 py-4 px-2">
-        {projects?.map((project) => (
-          <ProjectCard key={project.id} project={project} />
-        ))}
+      <MySkills />
+      <div className="bg-gradient-to-r from-[#2d3363] to-[#bbbbbb] sm:grid-cols-2">
+        <div className="text-center py-4">
+          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-white mb-2 relative inline-block">
+            <span className="relative z-5">Projects</span>
+            <span className="absolute inset-x-0 -bottom-1 h-1 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-lg"></span>
+          </h2>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-4 max-w-6xl mx-auto px-4">
+          {projects?.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
+        </div>
       </div>
-      <ContactPage/>
+      <ContactPage />
     </>
   );
 };

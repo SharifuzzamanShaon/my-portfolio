@@ -2,7 +2,7 @@ import React from "react";
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="border border-gray-300 dark:border-gray-700 rounded-lg shadow-md p-4  transition-transform transform hover:scale-105 hover:shadow-lg duration-300">
+    <div className="border border-gray-300 dark:border-gray-700 rounded-lg shadow-md p-4 transition-transform transform hover:scale-105 hover:shadow-lg duration-300">
       <img
         src={project.image}
         alt={project.name}
