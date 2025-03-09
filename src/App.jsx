@@ -9,7 +9,6 @@ function App() {
   const [darkMode, setDarkMode] = useState(false);
   return (
     <BrowserRouter>
-      <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       <Routes>
         <Route path="/" element={<HomePage darkMode={darkMode} />} />
         <Route
