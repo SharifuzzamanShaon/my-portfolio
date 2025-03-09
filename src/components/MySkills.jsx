@@ -116,7 +116,7 @@ const MySkills = () => {
     <>
       <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-2 justify-items-center bg-gradient-to-r from-[#2d3363] to-[#bbbbbb] py-6 ">
         <div className="max-w-md w-full">
-          <h2 className="text-sm  sm:text-2xl font-sm tracking-tight text-white mb-2 relative inline-block">
+          <h2 className="text-[8px]  sm:text-2xl font-sm tracking-tight text-white mb-2 relative inline-block">
             <span className="relative z-5 font-sm">Programming </span>
             <span className="absolute inset-x-0 -bottom-1 h-1 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-lg"></span>
           </h2>
