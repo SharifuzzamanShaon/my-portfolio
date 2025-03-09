@@ -2,11 +2,15 @@ import React from "react";
 import { BsDownload } from "react-icons/bs";
 import { Link, useLocation } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ contactRef, projectsRef }) => {
   const pdfUrl = import.meta.env.VITE_CV_DRIVE_URL;
   const location = useLocation();
   const handleOpenPdf = () => {
     window.open(pdfUrl, "_blank"); // Opens the PDF in a new tab
+  };
+
+  const handleScroll = (ref) => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
   };
   return (
     <nav className="hidden md:flex space-x-4">
@@ -22,7 +26,7 @@ const Navbar = () => {
           <BsDownload className="text-lg" />
         </a>
       </button>
-      <Link to="/projects">
+      <button onClick={()=>handleScroll(projectsRef)}>
         <span
           className={`${
             location.pathname === "/projects"
@@ -32,8 +36,8 @@ const Navbar = () => {
         >
           PROJECTS
         </span>
-      </Link>
-      <Link to="/contact">
+      </button>
+      <button onClick={() => handleScroll(contactRef)}>
         <span
           className={`${
             location.pathname === "/contact"
@@ -43,7 +47,7 @@ const Navbar = () => {
         >
           CONTACT
         </span>
-      </Link>
+      </button>
     </nav>
   );
 };
