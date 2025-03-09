@@ -74,8 +74,8 @@ const ContactPage = ({ darkMode, setDarkMode }) => {
     </div>
 
     {/* Social Links */}
-    <div className="mt-12 text-center">
-      <h3 className="text-xl font-semibold  text-white">Find me on</h3>
+    <div className="mt-10 text-center">
+      <h3 className="text-sm font-semibold  text-white">FIND ME ON:</h3>
       <div className="flex justify-center space-x-8">
         <a
           href="https://twitter.com/yourprofile"
