@@ -5,10 +5,11 @@ import ProjectCard from "../components/ProjectCard";
 const ProjectPage = ({ darkMode }) => {
   return (
     <div
-      className={`min-h-screen  bg-gradient-to-r from-[#2d3363] to-[#bbbbbb] flex dark:bg-gray-900 text-gray-900 dark:text-gray-100 `}
+      className={`min-h-screen  bg-gradient-to-r from-[#2d3363] to-[#bbbbbb] flex dark:bg-gray-900 text-gray-900 dark:text-gray-100 mt-6`}
     >
       <section className="py-10  dark:bg-gray-800">
-        <div className="container mx-auto px-4 py-12">
+        <div className="container mx-auto px-4 py-12">\
+
           <h2 className="text-2xl font-sm text-center mb-6 text-gray-800 dark:text-gray-200">
             PROJECTS
           </h2>
