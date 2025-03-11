@@ -32,30 +32,32 @@ const ProjectCard = ({ project }) => {
         </div>
 
         <div className="mt-4 flex space-x-4 justify-center">
+          {/* Live Demo Button */}
           <a
             href={project.liveLink || "#"}
             target={project.liveLink ? "_blank" : undefined}
             rel={project.liveLink ? "noopener noreferrer" : undefined}
-            className={`px-4 py-2 text-sm rounded-lg ${
-              project.liveLink
-                ? "bg-blue-500 text-white hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700"
-                : "bg-gray-300 text-gray-500 cursor-not-allowed dark:bg-gray-700 dark:text-gray-500"
-            }`}
-            disabled={!project.liveLink}
+            className={`px-5 py-2 text-sm font-medium rounded-full transition-all duration-300 flex items-center gap-2 
+      ${
+        project.liveLink
+          ? "flex items-center gap-2 border border-gray-600 p-1 rounded-lg text-white font-semibold  hover:bg-gray-800 hover:text-white hover:scale-105  shadow-md"
+          : "bg-gray-300 text-gray-500 cursor-not-allowed opacity-70 dark:bg-gray-700 dark:text-gray-500"
+      }`}
           >
-            Live Demo
+            <span className="animate-pulse">Live Demo</span>
           </a>
 
+          {/* GitHub Repo Button */}
           <a
             href={project?.gitRepo || "#"}
             target={project?.gitRepo ? "_blank" : undefined}
             rel={project?.gitRepo ? "noopener noreferrer" : undefined}
-            className={`px-4 py-2 text-sm rounded-lg ${
-              project?.gitRepo
-                ? "bg-gray-500 text-white hover:bg-gray-600 dark:bg-gray-600 dark:hover:bg-gray-700"
-                : "bg-gray-300 text-gray-500 cursor-not-allowed dark:bg-gray-700 dark:text-gray-500"
-            }`}
-            disabled={!project?.gitRepo}
+            className={`px-5 py-2 text-sm font-medium rounded-full transition-all duration-300 flex items-center gap-2 
+      ${
+        project?.gitRepo
+          ? "bg-gray-700 text-white hover:bg-gray-800 hover:scale-105 active:scale-95 shadow-md"
+          : "bg-gray-300 text-gray-500 cursor-not-allowed opacity-70 dark:bg-gray-700 dark:text-gray-500"
+      }`}
           >
             GitHub Repo
           </a>
