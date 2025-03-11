@@ -28,24 +28,21 @@ const HomePage = ({ darkMode }) => {
           {/* Description Section */}
           {/* CTA Button */}
           <DescriptionSection />
-          <div className="mt-6">
-            <button onClick={() => handleScroll(projectsRef)}>
-              <span className=" bg-slate-500 p-1  font-semibold py-2 px-6 rounded-full text-md shadow-xl hover:shadow-2xl text-white transform transition duration-300 hover:scale-105">
-                View My Projects
-              </span>
-            </button>
-          </div>
         </div>
       </div>
       <MySkills />
       <section ref={projectsRef}>
-        <div className="bg-gradient-to-r from-[#2d3363] to-[#bbbbbb] sm:grid-cols-2">
-          <div className="text-center py-4">
-            <h2 className="text-sm sm:text-3xl tracking-tight text-white mb-2 relative inline-block">
-              <span className="bg-slate-500 p-1 py-2 px-6 rounded-full  relative z-5">Projects</span>
-              {/* <span className="absolute inset-x-0 -bottom-1 h-1 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-lg"></span> */}
+        <div className="bg-gradient-to-r from-[#2d3363] to-[#bbbbbb] sm:grid-cols-2 py-6">
+          {/* Title Section */}
+          <div className="flex justify-center">
+            <h2 className="text-lg sm:text-2xl font-semibold text-white mb-4 relative inline-block text-center">
+              <span className="relative z-5 bg-slate-500 p-2 rounded-lg px-6 font-light">
+                Projects
+              </span>
             </h2>
           </div>
+
+          {/* Project Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-4 max-w-6xl mx-auto px-4">
             {projects?.map((project) => (
               <ProjectCard key={project.id} project={project} />
