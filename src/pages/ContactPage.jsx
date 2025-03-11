@@ -42,7 +42,7 @@ const ContactPage = ({ darkMode, setDarkMode }) => {
         </h2>
         <p className="text-white dark:text-gray-300">
           I’d love to hear from you! Feel free to reach out using the details
-          below or fill out the form.
+          below.
         </p>
         <div className="space-y-4">
           <div className="flex items-center space-x-4">
