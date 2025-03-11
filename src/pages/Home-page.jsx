@@ -37,7 +37,7 @@ const HomePage = ({ darkMode }) => {
           <div className="flex justify-center">
             <h2 className="text-lg sm:text-2xl font-semibold text-white mb-4 relative inline-block text-center">
               <span className="relative z-5 bg-slate-500 p-2 rounded-lg px-6 font-light">
-                Projects
+              {`<Projects/>`}  
               </span>
             </h2>
           </div>
