@@ -14,8 +14,8 @@ const DescriptionSection = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
       <h2 className="text-lg sm:text-2xl font-semibold text-white mb-4 relative inline-block">
-        <span className="relative z-5    bg-slate-500 p-1 rounded-lg px-4 font-light">
-          About Me
+        <span className="relative z-5  font-thin  bg-slate-500 p-1 rounded-lg px-4 font-mono">
+        {`<About_Me/>`}  
         </span>
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 text-gray-200 text-start mt-4">
@@ -69,7 +69,7 @@ const DescriptionSection = () => {
 
         {/* Education Background Section */}
         <div>
-          <h3 className="text-xl sm:text-md font-sm text-yellow-400 mb-4 font-light">
+          <h3 className="text-xl sm:text-md font-sm text-yellow-400 mb-4 font-light font-mono">
             Education
           </h3>
           <div className="space-y-4">
