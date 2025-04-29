@@ -19,6 +19,15 @@ const projects = [
     },
     {
       id: 3,
+      name: "Ecommerce App [PERN Stack]",
+      image: "/projectImg/e-commerce.png",
+      description: "An E-commerce application built with the PERN stack (PostgreSQL, Express.js, React.js, Node.js). It features a user-friendly interface and secure user authentication with JWT. Redux is used for state management, and the app is styled with Tailwind CSS.",
+      liveLink: "",
+      gitRepo: "https://github.com/SharifuzzamanShaon/E-commerce-ClientApp",
+      technologies: ["Node JS", "PostgreSQL", "Prisma ORM", "TypeScript", "Tailwind CSS"],
+    },
+    {
+      id: 4,
       name: "Student management System | API's",
       image: "/projectImg/api-ums.png",
       description: "The main goal of this project is to focus on code/function reusability and reduce the complexity of development. Token-based Auth Using JWT || cron job schedule  || code reusability || Error handling, and complete folder structure",
@@ -27,7 +36,7 @@ const projects = [
       technologies: ["Node JS", "Express Js", "CRON Job schedule", "File conversion"],
     },
     {
-      id: 4,
+      id: 5,
       name: "Find Recipes",
       image: "/projectImg/recipe.png",
       description: "This Recipe Management App enables users to explore and manage recipes effortlessly. It features secure user authentication with session management via localStorage, client-side pagination.",
