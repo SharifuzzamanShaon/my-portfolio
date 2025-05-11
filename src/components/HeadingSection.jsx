@@ -16,7 +16,7 @@ const HeadingSection = () => {
             {/* Text Content */}
             <div className="text-center sm:text-left mt-5 font-mono">
               <h1 className="text-1xl sm:text-2sl font-sm tracking-wide text-white mb-3">
-                Greetings,
+                Greetings 👋,
               </h1>
               <h1 className="text-2sl sm:text-4xl font-sm tracking-wide text-white mb-3 font-mono">
                 I'm <span className="text-yellow-400">Sharifuzzaman Hasan</span>
