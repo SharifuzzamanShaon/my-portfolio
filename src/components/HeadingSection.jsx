@@ -27,7 +27,7 @@ const HeadingSection = () => {
                 <span className="text-gray-400">|</span>{" "}
                 <span>Node Js | React Js | Next Js</span>
               </p>
-              <div className="grid grid-flow-col gap-1 grid-cols-10">
+              <div className="grid grid-flow-col gap-1 grid-cols-10 justify-normal">
                 <a
                   href="https://github.com/SharifuzzamanShaon"
                   target="_blank"
