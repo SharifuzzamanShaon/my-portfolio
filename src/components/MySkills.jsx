@@ -117,7 +117,7 @@ const MySkills = () => {
       <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-2 justify-items-center bg-gradient-to-r from-[#2d3363] to-[#bbbbbb] py-6 ">
         <div className="max-w-md w-full">
           <h2 className="text-sm  sm:text-2xl tracking-tight text-white mb-2 relative inline-block">
-            <span className="relative z-5 bg-slate-500 p-1 rounded-lg px-4 font-light font-mono"> {`<Programming/>`}  </span>
+            <span className="relative z-5 bg-slate-500 p-1 rounded-lg px-4 font-light text-lg font-poppins"> Programming Skills  </span>
             {/* <span className="absolute inset-x-0 -bottom-1 h-1 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-lg"></span> */}
           </h2>
 
@@ -144,7 +144,7 @@ const MySkills = () => {
                 C<p>Progamming</p>
               </div>
             </div>
-            <div className=" text-lg text-white py-4 font-mono">
+            <div className=" text-lg text-white py-4 font-poppins">
               <p className="py-2 text-white"> 👨🏽‍💻 Object Oriented programming</p>
               <p className="py-2 text-white"> 👨🏽‍💻 Functional programming</p>
             </div>
@@ -152,11 +152,11 @@ const MySkills = () => {
         </div>
         <div className="">
           <h2 className="text-sm  sm:text-2xl font-sm tracking-tight text-white mb-2 relative inline-block ">
-            <span className="relative z-5 bg-slate-500 p-1 rounded-lg px-4 font-thin font-mono"> {`<Technology_used/>`}  </span>
+            <span className="relative z-5 bg-slate-500 p-1 rounded-lg px-4 font-light text-lg font-poppins">Technology Skills</span>
             {/* <span className="absolute inset-x-0 -bottom-1 h-1 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-lg"></span> */}
           </h2>
 
-          <div className="max-w-4xl mx-auto font-mono">
+          <div className="max-w-4xl mx-auto font-poppins">
             {skills.map((category, index) => (
               <div
                 key={index}
