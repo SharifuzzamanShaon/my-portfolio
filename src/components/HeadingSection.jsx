@@ -14,18 +14,18 @@ const HeadingSection = () => {
         <div className="relative z-10 text-center max-w-5xl space-y-10">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             {/* Text Content */}
-            <div className="text-center sm:text-left mt-5 font-mono">
+            <div className="text-center sm:text-left mt-5 font-poppins">
               <h1 className="text-1xl sm:text-2sl font-sm tracking-wide text-white mb-3">
                 Greetings 👋,
               </h1>
-              <h1 className="text-2sl sm:text-4xl font-sm tracking-wide text-white mb-3 font-mono">
+              <h1 className="text-2sl sm:text-4xl font-sm tracking-wide text-white mb-3 font-poppins">
                 I'm <span className="text-yellow-400">Sharifuzzaman Hasan</span>
               </h1>
               <p className="text-sm sm:text-1xl font-medium max-w-2xl text-gray-300 mb-4">
                 A passionate{" "}
                 <span className="text-yellow-400">Full-Stack Developer</span>{" "}
                 <span className="text-gray-400">|</span>{" "}
-                <span className="text-yellow-400">JavaScript Enthusiast</span>
+                <span>Node Js | React Js | Next Js</span>
               </p>
               <div className="grid grid-flow-col gap-1 grid-cols-10">
                 <a
