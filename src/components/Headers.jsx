@@ -41,7 +41,7 @@ const Header = ({ darkMode, setDarkMode, contactRef, projectsRef }) => {
         {/* Logo */}
         <div className="text-xl font-bold text-gray-100 dark:text-gray-200">
           {openMobileMenu ? (
-            <MobileMenu />
+            <MobileMenu projectsRef={projectsRef} contactRef={contactRef} />
           ) : (
             <Link to="/">
               <img
