@@ -1,8 +1,3 @@
-import { DiNodejs } from "react-icons/di";
-import { FaJsSquare } from "react-icons/fa";
-import { SiExpress, SiMongodb, SiMysql } from "react-icons/si";
-import { RiReactjsFill } from "react-icons/ri";
-import { Link, useNavigate } from "react-router-dom";
 import MySkills from "../components/MySkills";
 import ProjectCard from "../components/ProjectCard";
 import projects from "../ProjectData/Projects";
@@ -12,12 +7,14 @@ import ContactPage from "./ContactPage";
 import DescriptionSection from "../components/DescriptionSection";
 import Header from "../components/Headers";
 import { useRef } from "react";
+import Footer from "../components/Footer";
 const HomePage = ({ darkMode }) => {
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
-  const handleScroll = (ref) => {
-    ref.current?.scrollIntoView({ behavior: "smooth" });
+  const scrollToProjects = () => {
+    projectsRef.current?.scrollIntoView({ behavior: "smooth" });
   };
+
   return (
     <>
       <Header contactRef={contactRef} projectsRef={projectsRef} />
@@ -27,7 +24,7 @@ const HomePage = ({ darkMode }) => {
           <StickyContact />
           {/* Description Section */}
           {/* CTA Button */}
-          <DescriptionSection />
+          <DescriptionSection scrollToProjects={scrollToProjects}/>
         </div>
       </div>
       <MySkills />
@@ -37,7 +34,7 @@ const HomePage = ({ darkMode }) => {
           <div className="flex justify-center">
             <h2 className="text-lg sm:text-2xl font-semibold text-white mb-4 relative inline-block text-center">
               <span className="relative z-5 bg-slate-500 p-2 rounded-lg px-6 font-light">
-              {`<Projects/>`}  
+              Projects 
               </span>
             </h2>
           </div>
@@ -53,6 +50,7 @@ const HomePage = ({ darkMode }) => {
       <section ref={contactRef}>
         <ContactPage />
       </section>
+      <Footer/>
     </>
   );
 };
