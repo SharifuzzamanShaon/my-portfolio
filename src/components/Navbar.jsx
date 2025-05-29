@@ -28,22 +28,14 @@ const Navbar = ({ contactRef, projectsRef }) => {
       </button>
       <button onClick={()=>handleScroll(projectsRef)}>
         <span
-          className={`${
-            location.pathname === "/projects"
-              ? "text-yellow-400"
-              : "text-gray-300 dark:text-gray-400"
-          } hover:text-yellow-500 transition text-sm tracking-wide`}
+          className={`text-gray-300 dark:text-gray-400 hover:text-[#1f2937] transition text-sm tracking-wide`}
         >
           PROJECTS
         </span>
       </button>
       <button onClick={() => handleScroll(contactRef)}>
         <span
-          className={`${
-            location.pathname === "/contact"
-              ? "text-yellow-400"
-              : "text-gray-300 dark:text-gray-400"
-          } hover:text-yellow-500 transition text-sm tracking-wide`}
+          className={`text-gray-300 dark:text-gray-400 hover:text-[#1f2937] transition text-sm tracking-wide`}
         >
           CONTACT
         </span>
