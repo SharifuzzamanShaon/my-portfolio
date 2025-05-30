@@ -19,7 +19,7 @@ const HeadingSection = () => {
                 Greetings 👋,
               </h1>
               <h1 className="text-2sl sm:text-4xl font-sm tracking-wide text-white mb-3 font-poppins">
-                I'm <span className="text-yellow-400">Sharifuzzaman Hasan</span>
+                I'm <span className="text-yellow-400 sm:text-2xl">Sharifuzzaman Hasan</span>
               </h1>
               <p className="text-sm sm:text-1xl font-medium max-w-2xl text-gray-300 mb-4">
                 A passionate{" "}
@@ -27,7 +27,7 @@ const HeadingSection = () => {
                 <span className="text-gray-400">|</span>{" "}
                 <span>Node Js | React Js | Next Js</span>
               </p>
-              <div className="grid grid-flow-col gap-1 grid-cols-10 justify-normal">
+              <div className="flex justify-center items-center gap-4 mt-4">
                 <a
                   href="https://github.com/SharifuzzamanShaon"
                   target="_blank"
