@@ -44,7 +44,7 @@ const ProjectCard = ({ project }) => {
           : "bg-gray-300 text-gray-500 cursor-not-allowed opacity-70 dark:bg-gray-700 dark:text-gray-500"
       }`}
           >
-            <span className="animate-pulse">Live Demo</span>
+            <span className="animate-pulse uppercase cursor-pointer font-light">Live Demo</span>
           </a>
 
           {/* GitHub Repo Button */}
@@ -59,7 +59,7 @@ const ProjectCard = ({ project }) => {
           : "bg-gray-300 text-gray-500 cursor-not-allowed opacity-70 dark:bg-gray-700 dark:text-gray-500"
       }`}
           >
-            GitHub Repo
+            <span className="animate-pulse uppercase cursor-pointer font-light">GitHub Repo</span>
           </a>
         </div>
       </div>
