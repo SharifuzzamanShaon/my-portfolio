@@ -7,7 +7,7 @@ const DescriptionSection = ({ scrollToProjects }) => {
     window.open(pdfUrl, "_blank"); // Opens the PDF in a new tab
   };
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
+    <div className="max-w-7xl mx-auto px-2 py-8">
       <h2 className="text-lg sm:text-2xl font-semibold text-white mb-4 relative inline-block">
         <span className="relative z-5  font-light  bg-slate-500 p-1 rounded-lg px-4 font-poppins">
         {`About Me`}  
@@ -47,7 +47,7 @@ const DescriptionSection = ({ scrollToProjects }) => {
               className="flex items-center gap-2 border border-gray-800 px-4 py-2 rounded-lg text-white font-semibold 
              transition-all duration-300 hover:bg-gray-800 hover:text-white hover:scale-105 active:scale-95 shadow-md"
             >
-              <span className="animate-pulse font-poppins">Find My Resume</span>
+              <span className="animate-pulse font-poppins text-sm font-light uppercase cursor-pointer">Find Resume</span>
               <BsDownload className="text-xl" />
             </button>
 
@@ -57,14 +57,14 @@ const DescriptionSection = ({ scrollToProjects }) => {
               className="flex items-center gap-2 border border-gray-800 px-4 py-2 rounded-lg text-white font-semibold 
              transition-all duration-300 hover:bg-gray-800 hover:text-white hover:scale-105 active:scale-95 shadow-md"
             >
-              <span className="animate-pulse font-poppins">View My Projects</span>
+              <span className="animate-pulse font-poppins text-sm font-light uppercase cursor-pointer">View Projects</span>
             </button>
           </div>
         </div>
 
         {/* Education Background Section */}
         <div>
-          <h3 className="text-xl sm:text-md font-sm text-yellow-400 mb-4 font-light font-poppins">
+          <h3 className="text-xl sm:text-md font-sm text-yellow-400 mb-4 font-light font-poppins text-center">
             Education
           </h3>
           <div className="space-y-4">
