@@ -8,6 +8,7 @@ import DescriptionSection from "../components/DescriptionSection";
 import Header from "../components/Headers";
 import { useRef } from "react";
 import Footer from "../components/Footer";
+import Achivements from "../components/Achivements";
 const HomePage = ({ darkMode }) => {
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
@@ -22,9 +23,7 @@ const HomePage = ({ darkMode }) => {
         <div className="text-center max-w-5xl space-y-10">
           <HeadingSection />
           <StickyContact />
-          {/* Description Section */}
-          {/* CTA Button */}
-          <DescriptionSection scrollToProjects={scrollToProjects}/>
+          <DescriptionSection scrollToProjects={scrollToProjects} />
         </div>
       </div>
       <MySkills />
@@ -33,8 +32,11 @@ const HomePage = ({ darkMode }) => {
           {/* Title Section */}
           <div className="flex justify-center">
             <h2 className="text-lg sm:text-2xl font-semibold text-white mb-4 relative inline-block text-center">
-              <span className="relative z-5 bg-slate-500 p-2 rounded-lg px-6 font-light" ref={projectsRef}>
-              Projects 
+              <span
+                className="relative z-5 bg-slate-500 p-2 rounded-lg px-6 font-light"
+                ref={projectsRef}
+              >
+                Projects
               </span>
             </h2>
           </div>
@@ -47,10 +49,13 @@ const HomePage = ({ darkMode }) => {
           </div>
         </div>
       </section>
+      <div className="bg-gradient-to-r from-[#2d3363] to-[#bbbbbb] sm:grid-cols-2 py-6 text-white ">
+          <Achivements />
+      </div>
       <section ref={contactRef}>
         <ContactPage />
       </section>
-      <Footer/>
+      <Footer />
     </>
   );
 };

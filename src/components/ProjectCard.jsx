@@ -9,21 +9,22 @@ const ProjectCard = ({ project }) => {
         className="w-full h-40 object-cover rounded-t-md"
       />
       <div className="mt-4">
-        <h3 className="text-xl font-semibold text-yellow-400 dark:text-white">
-          {project.name}
-        </h3>
+        <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
+          <h3 className="bg-gray-700 text-white hover:bg-gray-800 hover:scale-105 active:scale-95 shadow-md rounded-lg text-center py-2">
+            {project.name}
+          </h3>
+        </a>
         <p className="text-sm text-white dark:text-gray-300 mt-2">
           {project.description}
         </p>
         <div className="mt-4">
           <span className="font-bold text-white dark:text-gray-200">
-            Technologies:{" "}
           </span>
           <div className="flex flex-wrap gap-2 mt-2">
             {project?.technologies.map((tech, index) => (
               <span
                 key={index}
-                className="bg-yellow-400 text-white font-medium text-sm px-3 py-1 rounded-full shadow-md"
+                className=" border-gray-600 text-white font-medium text-sm px-3 py-1 rounded-full shadow-md"
               >
                 {tech}
               </span>
@@ -44,7 +45,7 @@ const ProjectCard = ({ project }) => {
           : "bg-gray-300 text-gray-500 cursor-not-allowed opacity-70 dark:bg-gray-700 dark:text-gray-500"
       }`}
           >
-            <span className="animate-pulse uppercase cursor-pointer font-light">Live Demo</span>
+            <span className="">Live Demo</span>
           </a>
 
           {/* GitHub Repo Button */}
@@ -59,7 +60,7 @@ const ProjectCard = ({ project }) => {
           : "bg-gray-300 text-gray-500 cursor-not-allowed opacity-70 dark:bg-gray-700 dark:text-gray-500"
       }`}
           >
-            <span className="animate-pulse uppercase cursor-pointer font-light">GitHub Repo</span>
+            <span className="">GitHub Repo</span>
           </a>
         </div>
       </div>

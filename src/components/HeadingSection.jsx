@@ -1,9 +1,5 @@
-import React from "react";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { DiNodejs } from "react-icons/di";
+
 import { FaGithubAlt, FaJsSquare, FaLinkedinIn } from "react-icons/fa";
-import { RiReactjsFill } from "react-icons/ri";
-import { SiExpress, SiMongodb, SiMysql } from "react-icons/si";
 
 const HeadingSection = () => {
   return (
