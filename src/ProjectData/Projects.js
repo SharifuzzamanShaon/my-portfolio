@@ -1,7 +1,7 @@
 const projects = [
     {
       id: 1,
-      name: "Learning Management System",
+      name: "LMS Tech App & Chatting Modudle",
       image: "/projectImg/lmsApp.png",
       description:"A modern learning platform. It features real-time notifications and uses Redis for in-memory caching to optimize performance.",
       liveLink: "https://skillsage-6v3g.onrender.com/",
@@ -15,7 +15,7 @@ const projects = [
       description: "A URL shortening service that allows users to shorten long URLs. It features a user-friendly interface and secure user authentication with JWT. The app is built with Node.js, Express.js, and MongoDB.",
       liveLink: "https://url-shortener-73ct.onrender.com/",
       gitRepo: "https://github.com/SharifuzzamanShaon/URL-shortener",
-      technologies: ["Node JS", "Express Js", "MongoDB", "JWT Auth","eJS"],
+      technologies: ["Node JS", "Express Js", "Redis", "Dockerization","eJS"],
     },
     {
       id: 3,
@@ -24,7 +24,7 @@ const projects = [
       description: "An E-commerce application built with the PERN stack (PostgreSQL, Express.js, React.js, Node.js). It features a user-friendly interface and secure user authentication with JWT. Redux is used for state management, and the app is styled with Tailwind CSS.",
       liveLink: "",
       gitRepo: "https://github.com/SharifuzzamanShaon/E-commerce-ClientApp",
-      technologies: ["Node JS", "PostgreSQL", "Prisma ORM", "TypeScript", "Tailwind CSS"],
+      technologies: ["Node JS", "PostgreSQL", "Prisma ORM", "TS", "Tailwind", "Redux", "RTK-Query", "Express Js"],
     },
     {
       id: 4,
