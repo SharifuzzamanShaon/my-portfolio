@@ -10,7 +10,7 @@ const DescriptionSection = ({ scrollToProjects }) => {
     <div className="max-w-7xl mx-auto px-2 py-8">
       <h2 className="text-lg sm:text-2xl font-semibold text-white mb-4 relative inline-block">
         <span className="relative z-5  font-light  bg-slate-500 p-1 rounded-lg px-4 font-poppins">
-        {`About Me`}  
+          {`About Me`}
         </span>
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 text-gray-200 text-start mt-4">
@@ -44,20 +44,24 @@ const DescriptionSection = ({ scrollToProjects }) => {
             {/* Find My Resume Button */}
             <button
               onClick={handleOpenPdf}
-              className="flex items-center gap-2 border border-gray-800 px-4 py-2 rounded-lg text-white font-semibold 
-             transition-all duration-300 hover:bg-gray-800 hover:text-white hover:scale-105 active:scale-95 shadow-md"
+              className="flex items-center gap-2 border border-white px-4 py-2 rounded-lg text-white font-semibold 
+             transition-all duration-300 hover:bg-gray-800 hover:text-white hover:border-gray-800 hover:scale-105 active:scale-95 shadow-md"
             >
-              <span className="animate-pulse font-poppins text-sm font-light uppercase cursor-pointer">Find Resume</span>
+              <span className=" font-poppins text-sm font-light uppercase cursor-pointer">
+                Find Resume
+              </span>
               <BsDownload className="text-xl" />
             </button>
 
             {/* View My Projects Button */}
             <button
               onClick={scrollToProjects}
-              className="flex items-center gap-2 border border-gray-800 px-4 py-2 rounded-lg text-white font-semibold 
-             transition-all duration-300 hover:bg-gray-800 hover:text-white hover:scale-105 active:scale-95 shadow-md"
+              className="flex items-center gap-2 border border-white px-4 py-2 rounded-lg text-white font-semibold 
+             transition-all duration-300 hover:bg-gray-800 hover:text-white hover:border-gray-800 hover:scale-105 active:scale-95 shadow-md"
             >
-              <span className="animate-pulse font-poppins text-sm font-light uppercase cursor-pointer">View Projects</span>
+              <span className=" font-poppins text-sm font-light uppercase cursor-pointer">
+                View Projects
+              </span>
             </button>
           </div>
         </div>
@@ -67,28 +71,33 @@ const DescriptionSection = ({ scrollToProjects }) => {
           <h3 className="text-xl sm:text-md font-sm text-yellow-400 mb-4 font-light font-poppins text-center">
             Education
           </h3>
-          <div className="space-y-4">
-            <p className="text-sm sm:text-lg leading-relaxed text-left font-poppins">
-              <span className="font-bold bg-gray-800 p-1 font-poppins">
+          <div className="space-y-6">
+            {/* BSc Section */}
+            <div className="bg-gradient-to-r from-[#2d3363] to-[#bbbbbb] p-5 rounded-xl shadow-md">
+              <h3 className="text-base sm:text-xl font-bold text-white font-poppins">
                 BSc in Computer Science & Engineering
-              </span>
-              <br />
-              Southeast University, Dhaka, Bangladesh <br />
-              <span className="font-sm italic text-sm sm:text-1xl font-medium">
-                {" "}
-                Expected Graduation Date: November 2025
-              </span>
-            </p>
-            <p className="text-sm sm:text-lg leading-relaxed text-left font-poppins">
-              <span className="font-bold bg-gray-800 p-1">
+              </h3>
+              <p className="text-sm sm:text-lg text-gray-300 mt-1 font-poppins">
+                Southeast University, Dhaka, Bangladesh
+              </p>
+              <p className="text-xs sm:text-base text-gray-400 italic mt-1 font-poppins">
+                Expected Graduation Date:{" "}
+                <span className="text-white font-medium">November 2025</span>
+              </p>
+            </div>
+
+            {/* Diploma Section */}
+            <div className="bg-gradient-to-r from-[#2d3363] to-[#bbbbbb] p-5 rounded-xl shadow-md">
+              <h3 className="text-base sm:text-xl font-bold text-white font-poppins">
                 Diploma in Computer Technology
-              </span>
-              <br />
-              Bangladesh Institute of Information Technology, Bogura <br />
-              <span className="text-sm sm:text-1xl font-medium italic">
-                (2015-2019)
-              </span>
-            </p>
+              </h3>
+              <p className="text-sm sm:text-lg text-gray-300 mt-1 font-poppins">
+                Bangladesh Institute of Information Technology, Bogura
+              </p>
+              <p className="text-xs sm:text-base text-gray-400 italic mt-1 font-poppins">
+                (2015–2019)
+              </p>
+            </div>
           </div>
         </div>
       </div>
