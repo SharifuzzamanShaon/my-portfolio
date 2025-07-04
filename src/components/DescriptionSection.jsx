@@ -9,7 +9,7 @@ const DescriptionSection = ({ scrollToProjects }) => {
   return (
     <div className="max-w-7xl mx-auto px-2 py-8">
       <h2 className="text-lg sm:text-2xl font-semibold text-white mb-4 relative inline-block">
-        <span className="relative z-5  font-light  bg-slate-500 p-1 rounded-lg px-4 font-poppins">
+        <span className="relative z-5  font-light uppercase p-1 rounded-lg px-4 font-poppins">
           {`About Me`}
         </span>
       </h2>
