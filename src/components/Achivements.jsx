@@ -14,7 +14,7 @@ const Achivements = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 ">
       <h2 className="text-lg sm:text-2xl font-semibold text-white mb-4 relative inline-block text-center">
-        <span className="relative z-5 bg-slate-500 p-2 rounded-lg px-6 font-light">
+        <span className="relative z-5 uppercase p-2 rounded-lg px-6 font-light text-center">
           Achievements
         </span>
       </h2>
