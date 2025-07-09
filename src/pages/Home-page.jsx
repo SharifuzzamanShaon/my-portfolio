@@ -9,6 +9,8 @@ import Header from "../components/Headers";
 import { useRef } from "react";
 import Footer from "../components/Footer";
 import Achivements from "../components/Achivements";
+import GitHubProfile from "../components/GitHubActivity";
+import LeetCodeProfile from "../components/LeetCodeActivity";
 const HomePage = ({ darkMode }) => {
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
@@ -49,6 +51,14 @@ const HomePage = ({ darkMode }) => {
           </div>
         </div>
       </section>
+      {/* GitHub Profile Section */}
+      <div className="bg-gradient-to-r from-[#2d3363] to-[#bbbbbb] sm:grid-cols-2 py-6 text-white">
+        <div className="flex flex-row max-w-6xl mx-auto px-4">
+          <GitHubProfile />
+          <LeetCodeProfile />
+        </div>
+      </div>
+      {/* Achievements Section */}
       <div className="bg-gradient-to-r from-[#2d3363] to-[#bbbbbb] sm:grid-cols-2 py-6 text-white ">
           <Achivements />
       </div>
