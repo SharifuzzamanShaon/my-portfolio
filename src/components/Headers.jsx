@@ -47,7 +47,7 @@ const Header = ({ darkMode, setDarkMode, contactRef, projectsRef }) => {
               <img
                 src="/pagelogo.png"
                 className={`h-8 transition-all duration-300 ${
-                  isScrolled ? "h-6" : "h-8"
+                  isScrolled ? "h-100%" : "h-8"
                 }`}
                 alt="Logo"
               />
